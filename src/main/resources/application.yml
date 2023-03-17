@@ -7,5 +7,10 @@ spring:
   cloud:
     config:
       server:
+        native:
+          search-locations: file:///D:/native-file-repo
         git:
-          uri: file://D:/git-local-repo
+#          uri: file://D:/git-local-repo
+            uri: https://github.com/TomyRavn/spring-cloud-config
+  profiles:
+    active: native
